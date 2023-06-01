@@ -32,7 +32,7 @@ export class App extends Component {
         })
 
         if(images.data.hits.length === 0){
-          Notify.info('Пробачьте, по Вашему запиту нічого не знайдено!')
+          Notify.info('Вибачте, по Вашому запиту нічого не знайдено!')
           this.setState({
             images: '',
             pageNumber: 1,
@@ -43,7 +43,7 @@ export class App extends Component {
         }
 
         if(images.data.hits.length < 12){
-          Notify.info(`по Вашему запиту знайдено ${images.data.hits.length} картинок`)
+          Notify.info(`по Вашому запиту знайдено ${images.data.hits.length} фото`)
           this.setState({
             isButtonDisabled: false,
           })
@@ -76,7 +76,7 @@ export class App extends Component {
         pageNumber: prevState.pageNumber + 1,
       }))
       if(images.data.hits.length < 12){
-        Notify.info('Пробачьте, по Вашему запиту більше нічого не знайдено!')
+        Notify.info('Вибачте, по Вашому запиту більше нічого не знайдено!')
         this.setState({
           isButtonDisabled: false
         })

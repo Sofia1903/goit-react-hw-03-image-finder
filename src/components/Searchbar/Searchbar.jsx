@@ -24,7 +24,7 @@ class Searchbar extends Component {
         inputValue: '',
       })
     } else {
-      Notify.failure('Поіск порожній та треба ввести значення!')
+      Notify.failure('Пошук порожній, потрібно ввести значення!')
     };
     
   };
